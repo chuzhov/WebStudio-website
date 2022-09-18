@@ -2,12 +2,29 @@
 
 .our-team__list {
     display: flex;
-    column-gap: 30px;
+    justify-content: center;
+    gap: 30px;
+  
+
+  @media screen and(max-width:1198px) {
+    flex-wrap: wrap;
   }
+}
   
   /* sec4 Картка працівника */
   .our-team__team-mate {
-    height: 428px;
+    height: 622px;
+    width: 450px;
+    
+    @media screen and(min-width: 768px) {
+      width: 354px;  
+      height: 536px;
+    }
+
+    @media screen and(min-width: 1200px) {
+      height: 428px;
+    }
+
     background-color: var(--logo-color-contrast);
   
     border-bottom-left-radius: 4px;
@@ -17,7 +34,12 @@
   }
   
   .our-team__info-wrapper {
-    padding: 30px 10px;
+    padding: 30px 10px 24px;
+
+    @media screen and(min-width: 1200px) {
+      padding: 30px 10px;
+    }
+    
   }
   
   .our-team__full-name {
