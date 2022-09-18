@@ -4,19 +4,27 @@
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    //adaptive updates
-    width: auto;
-    min-width: 320px;
+    width: 100%;
 
-    @media screen and(min-width: 1200px) {
+    @media screen and (min-width: 480px) {
+      width: 480px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
       width: 1200px;
     }
          
   }
   
-  .section {
+.section {
+  padding: 60px 0;
+
+  @media screen and (min-width: 1200px) {
     padding: 94px 0;
   }
+}
   
   .section--no-bottom {
     padding-bottom: 0;
@@ -26,9 +34,18 @@
     background-color: var(--secondary-background-color);
   }
 
+  /* sec 3, 4 Назва секції - відима */
+  .section-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+  
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+
   .list-styler {
-    padding: 0;
-    margin: 0;
     list-style-type: none;
   }
   

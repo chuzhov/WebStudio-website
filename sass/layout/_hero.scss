@@ -1,10 +1,11 @@
 /* MAIN BANNER */
 
 .hero {
-    padding: 200px 0;
+    padding: 118px 0;
   
-    height: 600px;
-    max-width: 1600px;
+    height: 400px;
+    max-width: 480px;
+
     margin-left: auto;
     margin-right: auto;
   
@@ -12,10 +13,26 @@
     
     background-color: var(--hero-fallback-color);
     background-image: linear-gradient(to right, var(--hero-background-color), var(--hero-background-color)), 
-                      url("../images/hero-img.jpg");
+                      url("../images/hero-img-m-480x400.jpg");
     background-repeat: no-repeat;
     background-position: center;
+
+    @media screen and(min-width: 768px) {
+      
+      background-image: linear-gradient(to right, var(--hero-background-color), var(--hero-background-color)), 
+                      url("../images/hero-img-m-768x400");
+      height: 400px;
+      max-width: 768px;
+    }
     
+    @media screen and(min-width: 1200px) {
+      padding: 200px 0;
+      background-image: linear-gradient(to right, var(--hero-background-color), var(--hero-background-color)), 
+                      url("../images/hero-img.jpg");
+      height: 600px;
+      max-width: 1600px;
+    }
+
   }
   
   .hero__title {
