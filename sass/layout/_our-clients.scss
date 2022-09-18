@@ -4,13 +4,28 @@
     display: flex;
     justify-content: center;
     column-gap: 30px;
+
+    @media screen and(max-width: 1198px) {
+      flex-wrap: wrap;
+      row-gap: 30px;
+    }
   }
-  .our-client__item-link {
+
+  .our-clients__link {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    width: 210px;
+
+    @media screen and(min-width: 768px) {
+      width: 226px;
+    }
   
-    width: 170px;
+    @media screen and(min-width: 1200px) {
+      width: 170px;
+    }
+
     height: 92px;
   
     border: 1px solid var(--border-color);

@@ -108,10 +108,16 @@ button {
 /* sec 3, 4 Назва секції - відима */
 .section-title {
   margin-top: 0;
-  margin-bottom: 50px;
-  font-size: 36px;
+  margin-bottom: 30px;
+  font-size: 28px;
   font-weight: 700;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .list-styler {
@@ -469,12 +475,18 @@ button {
   justify-content: center;
   column-gap: 30px;
 }
+@media screen and (max-width: 1198px) {
+  .our-clients__list {
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+}
 
-.our-client__item-link {
+.our-clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid var(--border-color);
   border-radius: 4px;
@@ -483,7 +495,17 @@ button {
   cursor: pointer;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.our-client__item-link:hover, .our-client__item-link:focus {
+@media screen and (min-width: 768px) {
+  .our-clients__link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-clients__link {
+    width: 170px;
+  }
+}
+.our-clients__link:hover, .our-clients__link:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
