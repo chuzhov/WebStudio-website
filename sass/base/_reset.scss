@@ -1,0 +1,30 @@
+/* БАЗОВІ ЕЛЕМЕНТИ ДІЗАЙНУ */
+body {
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  /* font-weight: 400; browser default*/
+  /* font-style: normal; */
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+  background-color: var(--primary-background-color);
+}
+
+p, h1, h2, h3, h4, h5 {
+  margin:       0;
+  padding:      0;
+  margin-block: 0;
+}
+
+img {
+  display: block;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  background-color: inherit;
+  border: 0 none currentColor;
+}

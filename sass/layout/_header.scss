@@ -1,0 +1,112 @@
+.page-header {
+    border-bottom: 1px solid var(--header-line-color);
+  }
+  
+  .page-header__combiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Розмічаємо головне меню */
+  
+  .page-header__nav {
+    /* флекс із лого і меню - щоб поставити їх в один рядок*/
+    display: flex;
+    align-items: center;
+  }
+  
+  .main-menu {
+    /* робимо горизонтальним меню */
+    display: flex;
+    margin-left: 93px; /* відступ до логотипу  */
+  }
+  
+  .main-menu__item {
+    position: relative;
+    width: 100%;
+
+    &:not(:last-child) {
+      /* відступи між елементами крім останнього */
+      margin-right: 50px;
+    }
+  }
+  
+  .main-menu__link {
+    
+    display: block; /* потрібно щоб встановити верт.розміри елементам меню */
+    padding-top: 32px; /* встановлюємо розмір хедера відступами вниз та вверх */
+    padding-bottom: 32px; /* також буде збільшений розмір реакції на ховер */
+  
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    text-shadow: none;
+  
+    color: var(--title-text-color); /* не наслідується бо посилання */
+  
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+    }
+
+  }
+  
+  .main-menu--current-decor {
+    color: var(--accent-color);
+  }
+  
+  .main-menu--current-decor::after {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+  
+    border: 2px solid var(--accent-color);
+    border-radius: 2px;
+  
+    content: "";
+    /* transform: scale(1);
+    transition: transform 250ms var(--time-function); */
+  }
+  
+  /* Розмічуємо мейл та телефон в футері */
+  .e-contacts {
+    display: flex;
+    align-items: center; 
+  }
+  
+  .e-contacts__arranger {
+    margin-left: auto;
+  }
+  
+  
+  .e-contacts__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  
+  .e-contacts__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+  
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--article-text-color);
+  
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    }
+  }
+  
+  
+  

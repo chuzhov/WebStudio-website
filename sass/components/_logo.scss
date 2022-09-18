@@ -1,0 +1,17 @@
+/* Розмічаємо лого студії */
+.logo {
+    font-family: 'Raleway', 'Arial', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.19;
+    text-decoration: none;
+  }
+  .logo--main-color {   
+    color: var(--logo-color-head);
+  }
+  .logo--accent-color {
+    color: var(--logo-color-tail);  //можно назвати page-header--color
+  }
+  .logo--reverse-color {
+    color: var(--logo-color-contrast); //можно назвати page-footer--color
+  }

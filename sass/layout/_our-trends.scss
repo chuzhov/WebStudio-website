@@ -1,0 +1,31 @@
+/* sec 3 список - картинки в рядок ---------------------------------------- */
+.our-trends {
+    display: flex;
+    column-gap: 30px;
+  }
+  
+  .our-trends__img-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  .our-trends__description {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  
+    width: 100%;
+    height: 70px;
+    padding: 27px 10px;
+  
+    background-color: rgba(47, 48, 58, 0.8);;
+    color: var(--logo-color-contrast);
+  
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  
+  }
+    

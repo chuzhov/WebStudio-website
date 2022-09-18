@@ -1,0 +1,159 @@
+/* кнопки чекбокси в Портфоліо */
+.filter-button {
+    padding: 6px 22px;
+  
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.63;
+    letter-spacing: 0.03em;
+  
+    box-shadow: none;
+    border-radius: 4px;
+    cursor: pointer;
+  
+    outline: none;
+  
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .filter-button.primary {
+    color: var(--primary-background-color);
+    background-color: var(--accent-color);
+    border-style: none;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+  
+  .filter-button.secondary {
+    color: var(--title-text-color);
+    background-color: var(--secondary-background-color);
+    border-style: none;
+
+    &:hover,
+    &:focus {
+      color: var(--primary-background-color);
+      background-color: var(--accent-color);
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+
+  }
+  
+/* Стилізуємо портфоліо */
+
+/* Фільтр робіт */
+.portfolio-filter {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.portfolio-filter__arranger {
+  margin-bottom: 50px;
+}
+
+.portfolio-filter__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+/* Перелік робіт  3х3  */
+.our-portfolio {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  column-gap: 30px;
+}
+
+.our-portfolio__item {
+  height: 404px;
+  background-color: var(--logo-color-contrast);
+  outline: none;
+}
+
+.our-portfolio__link {
+  display: block;
+
+  color: var(--title-text-color);
+  text-decoration: none;
+
+  box-shadow: none;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    outline: transparent;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+                0px 4px 4px rgba(0, 0, 0, 0.06), 
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+  
+  }
+
+  &:focus .our-portfolio__overlay,
+  &:hover .our-portfolio__overlay {
+  /* opacity: 0.9; */
+  transform: translateY(0);
+  }
+  
+}
+
+.our-portfolio__link .thumb {
+  position: relative;
+  width: 100%;
+  height: 294px;
+  overflow: hidden;
+}
+.thumb > .our-portfolio__overlay {
+  display: flex;
+  align-items: center;
+}
+
+.our-portfolio__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  padding: calc((370px - 322px) / 2);  
+  overflow: auto;
+
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  background-color: var(--accent-color); 
+
+  font-size: 18px;
+  line-height: calc(28 / 18);
+  letter-spacing: 0.03em;
+
+  color: var(--logo-color-contrast);
+}
+
+.our-portfolio__info {
+  padding: 20px 24px;
+
+  border-right: 1px solid var(--border-color-portfolio);
+  border-bottom: 1px solid var(--border-color-portfolio);
+  border-left: 1px solid var(--border-color-portfolio);
+}
+
+.our-portfolio__title {
+  
+  margin-bottom: 4px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2em;
+  letter-spacing: 0.06em;
+}
+
+.our-portfolio__industry {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 1.875em;
+  color: var(--article-text-color);
+}
+  

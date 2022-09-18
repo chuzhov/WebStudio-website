@@ -1,0 +1,55 @@
+/* MAIN BANNER */
+
+.hero {
+    padding: 200px 0;
+  
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  
+    text-align: center;
+    
+    background-color: var(--hero-fallback-color);
+    background-image: linear-gradient(to right, var(--hero-background-color), var(--hero-background-color)), 
+                      url("../images/hero-img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    
+  }
+  
+  .hero__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+  
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  
+    color: var(--primary-background-color);
+  }
+  
+  /* Кнопка замовлення */
+  .button {
+    padding: 9px 31px;
+    min-width: 216px;
+  
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    text-align: center;
+  
+    border: 1px solid var(--button-border-color);
+    border-radius: 4px;
+  
+    color: var(--primary-background-color);
+    background-color: var(--accent-color);
+  
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+    cursor: pointer;
+  }
+  

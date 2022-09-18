@@ -1,0 +1,21 @@
+@import 'utils/variables';
+@import 'base/reset';
+
+@import 'vendors/side-styles';
+@import 'utils/mixins';
+
+@import 'base/common';
+@import 'components/logo';
+  
+@import 'layout/header';
+@import 'layout/hero';
+@import 'layout/features';
+@import 'layout/our-trends';
+@import 'layout/our-team';
+@import 'layout/our-clients';
+@import 'layout/footer';
+
+@import 'components/modal';
+
+@import 'layout/portfolio';
+

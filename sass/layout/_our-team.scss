@@ -1,0 +1,54 @@
+/* sec 4 список працівників ----------------------------------------------- */
+
+.our-team {
+    display: flex;
+    column-gap: 30px;
+  }
+  
+  /* sec4 Картка працівника */
+  .our-team__team-mate {
+    height: 428px;
+    background-color: var(--logo-color-contrast);
+  
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  
+  .our-team__info-wrapper {
+    padding: 30px 10px;
+  }
+  
+  .our-team__full-name {
+    margin: 0;
+  
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+  }
+  
+  .our-team__position {
+    margin-top: 10px;
+    margin-bottom: 16px;
+  
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+  
+    color: var(--article-text-color);
+  }
+  
+  .our-team__socials {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    opacity: transparent;
+  }
+  
+  
+     
+  
+  
+  
