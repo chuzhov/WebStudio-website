@@ -387,6 +387,12 @@ button {
 }
 
 /* sec 3 список - картинки в рядок ---------------------------------------- */
+@media screen and (max-width: 1198px) {
+  .our-trends {
+    display: none;
+  }
+}
+
 .our-trends__list {
   display: flex;
   column-gap: 30px;
