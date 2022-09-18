@@ -1,9 +1,17 @@
 .container {
-    width: 1200px;
+    
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    //adaptive updates
+    width: auto;
+    min-width: 320px;
+
+    @media screen and(min-width: 1200px) {
+      width: 1200px;
+    }
+         
   }
   
   .section {

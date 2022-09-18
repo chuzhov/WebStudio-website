@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
   <title>Студія</title>
 
   <!-- Comes from Google Fonts: -->
@@ -74,12 +75,12 @@
     </section>
 
     <!--  Section FEATURES list  -->
-    <section class="section section--no-bottom">
+    <section class="features section section--no-bottom">
 
       <div class="container">
 
         <h2 class="visually-hidden">Наші переваги</h2>
-        <ul class="features list-styler">
+        <ul class="features__list list-styler">
           <!-- Feature1-->
           <li>
             <div class="features__icon-wrapper">
@@ -146,13 +147,13 @@
     </section>
 
     <!--  РОЗДІЛ ЧИМ ЗАЙМАЄМОСЯ  -->
-    <section class="section">
+    <section class="our-trends section">
       <div class="container">
 
-        <h2 class="section__title">
+        <h2 class="section-title">
           Чим ми займаємося
         </h2>
-        <ul class="our-trends list-styler">
+        <ul class="our-trends__list list-styler">
 
           <li>
             <div class="our-trends__img-wrapper">
@@ -186,30 +187,23 @@
     </section>
 
     <!--  РОЗДІЛ НАША КОМАНДА  -->
-    <section class="section section--background-color">
+    <section class="our-team section section--background-color">
       <div class="container">
 
-        <h2 class="section__title">
+        <h2 class="section-title">
           Наша команда
         </h2>
 
-        <ul class="our-team list-styler">
-
-          <!--team-mate1-->
+        <ul class="our-team__list list-styler">
           <li class="our-team__team-mate">
-
             <img src="images/tm1.jpg" alt="Ігор" width="270">
-
             <div class="our-team__info-wrapper">
-
               <h3 class="our-team__full-name">
                 Ігор Дем'яненко
               </h3>
               <p class="our-team__position">
                 Product Designer
               </p>
-
-              <!-- перелік лінків соціальних мереж -->
               <ul class="our-team__socials list-styler">
                 <li>
                   <a class="socials-list our-team__socials-list-styler" href="">
@@ -240,13 +234,10 @@
                   </a>
                 </li>
               </ul>
-              <!--кінець блоку лінків соц.мереж -->
-
             </div>
           </li>
 
           <li class="our-team__team-mate">
-            <!--team-mate2-->
             <img src="images/tm2.jpg" alt="Ольга" width="270">
 
             <div class="our-team__info-wrapper">
@@ -257,8 +248,6 @@
               <p class="our-team__position">
                 Frontend Developer
               </p>
-
-              <!-- перелік лінків соціальних мереж -->
               <ul class="our-team__socials list-styler">
                 <li>
                   <a class="socials-list our-team__socials-list-styler" href="">
@@ -289,15 +278,10 @@
                   </a>
                 </li>
               </ul>
-              <!--кінець блоку лінків соц.мереж -->
-
             </div>
           </li>
-
           <li class="our-team__team-mate">
-            <!--team-mate3-->
             <img src="images/tm3.jpg" alt="Микола" width="270">
-
             <div class="our-team__info-wrapper">
               <h3 class="our-team__full-name">
                 Микола Тарасов
@@ -305,8 +289,6 @@
               <p class="our-team__position">
                 Marketing
               </p>
-
-              <!-- перелік лінків соціальних мереж -->
               <ul class="our-team__socials list-styler">
                 <li>
                   <a class="socials-list our-team__socials-list-styler" href="">
@@ -337,15 +319,10 @@
                   </a>
                 </li>
               </ul>
-              <!--кінець блоку лінків соц.мереж -->
-
             </div>
           </li>
-
           <li class="our-team__team-mate">
-            <!--team-mate4-->
             <img src="images/tm4.jpg" alt="Михайло" width="270">
-
             <div class="our-team__info-wrapper">
               <h3 class="our-team__full-name">
                 Михайло Єрмаков
@@ -353,8 +330,6 @@
               <p class="our-team__position">
                 UI Designer
               </p>
-
-              <!-- перелік лінків соціальних мереж -->
               <ul class="our-team__socials list-styler">
                 <li>
                   <a class="socials-list our-team__socials-list-styler" href="">
@@ -385,25 +360,19 @@
                   </a>
                 </li>
               </ul>
-              <!--кінець блоку лінків соц.мереж -->
-
             </div>
           </li>
-
-        </ul> <!-- кінець розмітки списку працівників-->
+        </ul>
       </div>
     </section>
 
-
     <!--  РОЗДІЛ НАШІ КЛІЄНТИ  -->
-    <section class="section">
+    <section class="our-clients section">
       <div class="container">
-
-        <h2 class="section__title">
+        <h2 class="section-title">
           Постійні клієнти
         </h2>
-
-        <ul class="our-clients list-styler">
+        <ul class="our-clients__list list-styler">
           <li>
             <a class="our-client__item-link" href="#">
               <!-- client 1-->
@@ -490,7 +459,7 @@
         </div>
         <!-- Блок линків на соціальні мережі студії -->
         <div class="footer-social-block">
-          <h4 class="footer-title">приєднуйтесь</h4>
+          <h4 class="footer__title">приєднуйтесь</h4>
           <ul class="footer-our-socials-list list-styler">
             <li>
               <a class="socials-list page-footer__socials-list-styler" href="">
@@ -524,8 +493,8 @@
         </div>
 
         <!-- Блок підписки в футері  -->
-        <div class="footer-subscribe-block">
-          <h4 class="footer-title">підпишитесь на розсилку</h4>
+        <div class="footer__subscribe-block">
+          <h4 class="footer__title">підпишитесь на розсилку</h4>
           <!-- Мітку заховаємо заради однакового GUE зі соціальним блоком зліва-->
           <label for="subscribe-us-input" class="visually-hidden"></label>
           

@@ -2,7 +2,7 @@
 /* sec 2 Скриваємо логічний заголовок секції, якого немає на екрані */
 
 /* sec2 h3 Список переваг -------------------------------------------- */
-.features {
+.features__list {
     display: flex;
     column-gap: 30px;
   }
@@ -37,7 +37,7 @@
   }
   
   /* sec 3, 4 Назва секції - відима */
-  .section__title {
+  .section-title {
     margin-top: 0;
     margin-bottom: 50px;
   

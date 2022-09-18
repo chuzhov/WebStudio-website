@@ -39,6 +39,9 @@ p, h1, h2, h3, h4, h5 {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 
 button {
@@ -63,11 +66,17 @@ button {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  width: auto;
+  min-width: 320px;
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .section {
@@ -281,7 +290,7 @@ button {
 /* Назва секції - невідима */
 /* sec 2 Скриваємо логічний заголовок секції, якого немає на екрані */
 /* sec2 h3 Список переваг -------------------------------------------- */
-.features {
+.features__list {
   display: flex;
   column-gap: 30px;
 }
@@ -311,7 +320,7 @@ button {
 }
 
 /* sec 3, 4 Назва секції - відима */
-.section__title {
+.section-title {
   margin-top: 0;
   margin-bottom: 50px;
   font-size: 36px;
@@ -320,7 +329,7 @@ button {
 }
 
 /* sec 3 список - картинки в рядок ---------------------------------------- */
-.our-trends {
+.our-trends__list {
   display: flex;
   column-gap: 30px;
 }
@@ -348,7 +357,7 @@ button {
 }
 
 /* sec 4 список працівників ----------------------------------------------- */
-.our-team {
+.our-team__list {
   display: flex;
   column-gap: 30px;
 }
@@ -391,7 +400,7 @@ button {
 }
 
 /* Sec 5  перелік постійних клієнтів  */
-.our-clients {
+.our-clients__list {
   display: flex;
   justify-content: center;
   column-gap: 30px;
@@ -499,7 +508,7 @@ button {
 }
 
 /* Футер блок: приєднуйся до нас в соц.мережах */
-.footer-title {
+.footer__title {
   width: fit-content;
   margin-bottom: 20px;
   font-weight: 700;
