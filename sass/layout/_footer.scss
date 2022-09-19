@@ -47,20 +47,33 @@
 .page-footer__combiner
 {
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  flex-direction: column;
+
+  @media screen and(min-width: 1200px) {
+    flex-direction: row;
+    align-items: baseline;
+  }
+  
 }
 
 /* Блок лого, адрес телефон мейл */
 .footer-address-block {
-  margin-right: 70px;
+  @media screen and(min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 
 .footer-social-block {
-  margin-right: 93px;
+  @media screen and(min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 
 .studio-address {
-  margin-top: 20px;              /*відступ від блоку адреси до лого */
+  @media screen and(min-width: 1200px) {
+    margin-top: 20px;              /*відступ від блоку адреси до лого */
+  }
 }
 
 .footer-addr-text-style1 a {
