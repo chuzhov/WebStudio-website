@@ -474,27 +474,43 @@ button {
 .hero {
   padding: 118px 0;
   height: 400px;
-  max-width: 480px;
+  max-width: 766px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   background-color: var(--hero-fallback-color);
-  background-image: linear-gradient(to right, var(--hero-background-color), var(--hero-background-color)), url("../images/hero-img-m-480x400.jpg");
+  background-image: var(--hero-gradient), url("../images/hero-img-mob-1.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-@media screen and (max-width: 768px) {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to right, var(--hero-background-color), var(--hero-background-color)), url("../images/hero-img-m-768x400.jpg");
-    max-width: 768px;
+    background-image: var(--hero-gradient), url(../images/hero-img-mob-2.jpg);
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: var(--hero-gradient), url("../images/hero-img-tab-1.jpg");
+    max-width: 1199px;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--hero-gradient), url(../images/hero-tab-2.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
   .hero {
     background-image: var(--hero-gradient), url("../images/hero-des-1.jpg");
     height: 400px;
     max-width: 1600px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--hero-gradient), url(../images/hero-des-2.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
