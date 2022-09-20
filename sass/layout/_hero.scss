@@ -25,10 +25,14 @@
     
     @media screen and(min-width: 769px) {
       
-      background-image: linear-gradient(to right, var(--hero-background-color), var(--hero-background-color)), 
-                      url("../images/hero-img.jpg");
+      background-image: var(--hero-gradient), url("../images/hero-des-1.jpg");
       height: 400px;
       max-width: 1600px;
+
+      @media retina {
+        background-image: var(--hero-gradient), url(../images/hero-des-2.jpg);
+      }
+
     }
 
     @media screen and(min-width: 1200px) {
@@ -42,6 +46,10 @@
   }
   
   .hero__title {
+
+   @media screen and (max-width: 478px) {
+    font-size: 20px;
+   } 
     margin-top: 0;
     margin-bottom: 30px;
   

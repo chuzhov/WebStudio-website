@@ -5,6 +5,7 @@
   --accent-color: #2196f3;
   --primary-background-color: rgb(255, 255, 255);
   --hero-background-color: rgba(47, 48, 58, 0.4);
+  --hero-gradient: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   --hero-fallback-color: #c4c4c4;
   --primary-background-color-transp: rgba(255, 255, 255, 0.6);
   --secondary-background-color: #f5f4fa;
@@ -201,7 +202,8 @@ button {
 }
 @media screen and (min-width: 480px) {
   .page-header {
-    padding: 10px 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -338,7 +340,7 @@ button {
 }
 
 .mob-menu__list {
-  margin-bottom: 302px;
+  margin-bottom: 31px;
 }
 
 .mob-menu__item:not(:last-child) {
@@ -443,7 +445,7 @@ button {
 }
 @media screen and (min-width: 769px) {
   .hero {
-    background-image: linear-gradient(to right, var(--hero-background-color), var(--hero-background-color)), url("../images/hero-img.jpg");
+    background-image: var(--hero-gradient), url("../images/hero-des-1.jpg");
     height: 400px;
     max-width: 1600px;
   }
@@ -464,6 +466,11 @@ button {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-background-color);
+}
+@media screen and (max-width: 478px) {
+  .hero__title {
+    font-size: 20px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {

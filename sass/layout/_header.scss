@@ -1,6 +1,7 @@
 .page-header {
     @include mobile {
-      padding: 10px 15px;
+      padding-top: 10px; 
+      padding-bottom: 10px;
     }
     border-bottom: 1px solid var(--header-line-color);
   }
