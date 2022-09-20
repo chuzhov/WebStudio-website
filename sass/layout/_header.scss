@@ -3,9 +3,12 @@
   }
   
   .page-header__combiner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
+    @include tablet {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
   
   /* Розмічаємо головне меню */
