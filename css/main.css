@@ -346,12 +346,21 @@ button {
 }
 
 .mob-menu__contact-list-item:first-child > a {
-  margin-bottom: 32px;
+  font-size: 30px;
   font-weight: 500;
-  font-size: 34px;
   line-height: 1.1764705882;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+@media screen and (min-width: 480px) {
+  .mob-menu__contact-list-item:first-child > a {
+    font-size: 34px;
+  }
+}
+
+.mob-menu__contact-list-item {
+  display: block;
+  margin-bottom: 32px;
 }
 
 .mob-menu__contact-list-item:last-child > a {
@@ -369,22 +378,26 @@ button {
 
 .mob-menu__soc-item {
   position: relative;
+  flex-wrap: wrap;
 }
 
 .mob-menu__soc-link {
   display: block;
+  font-size: 12px;
   font-weight: 500;
-  font-size: 18px;
   line-height: 1.2222222222;
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
+@media screen and (min-width: 480px) {
+  .mob-menu__soc-link {
+    font-size: 18px;
+  }
+}
 
 .mob-menu__soc-item:not(:last-child)::after {
   content: "";
-  position: absolute;
-  top: 0;
-  right: 0px;
+  margin: 0 10px;
   width: 1px;
   height: 22px;
   background-color: red;
