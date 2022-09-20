@@ -1,8 +1,8 @@
 .page-header {
-    @include mobile {
-      padding-top: 10px; 
-      padding-bottom: 10px;
-    }
+    
+      padding-top: 16px; 
+      padding-bottom: 16px;
+    
     @include tablet {
       padding-top: 0;
       padding-bottom: 0;
@@ -11,7 +11,7 @@
   }
   
   .page-header__combiner {
-    
+    display: none;
     @include tablet {
       display: flex;
       align-items: center;
@@ -21,33 +21,39 @@
   
   /* Розмічаємо головне меню */
   
-  .page-header__nav {
-    /* флекс із лого і меню - щоб поставити їх в один рядок*/
-    display: flex;
-    align-items: center;
-  }
   
+  .page-header__nav {
+    @include tablet {
+      /* флекс із лого і меню - щоб поставити їх в один рядок*/
+      display: flex;
+      align-items: center;
+    }
+  }
+
   .main-menu {
     /* робимо горизонтальним меню */
-    display: flex;
-
     @include tablet {
+      display: flex;
       margin-left: 87px;
     }
     margin-left: 93px; /* відступ до логотипу  */
   }
   
   .main-menu__item {
-    position: relative;
-    width: 100%;
+    @include tablet {
+      position: relative;
+      width: 100%;
 
-    &:not(:last-child) {
-      /* відступи між елементами крім останнього */
-      margin-right: 50px;
+      &:not(:last-child) {
+        /* відступи між елементами крім останнього */
+        margin-right: 50px;
+      }
     }
   }
   
   .main-menu__link {
+
+    @include tablet {
     
     display: block; /* потрібно щоб встановити верт.розміри елементам меню */
     padding-top: 32px; /* встановлюємо розмір хедера відступами вниз та вверх */
@@ -67,7 +73,7 @@
     &:focus {
     color: var(--accent-color);
     }
-
+    }
   }
   
   .main-menu--current-decor {
@@ -75,19 +81,21 @@
   }
   
   .main-menu--current-decor::after {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 4px;
-    width: 100%;
-  
-    border: 2px solid var(--accent-color);
-    border-radius: 2px;
-  
-    content: "";
-    /* transform: scale(1);
-    transition: transform 250ms var(--time-function); */
+    @include tablet {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 4px;
+      width: 100%;
+    
+      border: 2px solid var(--accent-color);
+      border-radius: 2px;
+    
+      content: "";
+      /* transform: scale(1);
+      transition: transform 250ms var(--time-function); */
+    }
   }
   
   /* Розмічуємо мейл та телефон в футері */
@@ -99,6 +107,9 @@
       row-gap: 10px;
       margin-left: auto;
       // align-items: center; 
+    }
+    @include desktop {
+      flex-direction: row;
     }
   }
   
@@ -116,20 +127,22 @@
   }
   
   .e-contacts__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 10px;
-  
-    font-weight: 500;
-    text-decoration: none;
-    color: var(--article-text-color);
-  
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 10px;
+    
+      font-weight: 500;
+      text-decoration: none;
+      color: var(--article-text-color);
+    
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+      
     }
   }
   

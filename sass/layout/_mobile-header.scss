@@ -1,3 +1,17 @@
+.mobile-container {
+
+    &.container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    @include tablet {
+        display: none;
+    }
+    
+}
+
 .mob-menu__btn-open {
     display: block;
     margin-left: auto;  
