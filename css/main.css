@@ -397,10 +397,12 @@ button {
 
 .mob-menu__soc-item:not(:last-child)::after {
   content: "";
-  margin: 0 10px;
+  position: absolute;
+  top: 0;
+  right: -10px;
   width: 1px;
   height: 22px;
-  background-color: red;
+  background-color: rgba(21, 21, 21, 0.2);
 }
 
 /* MAIN BANNER */

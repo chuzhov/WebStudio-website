@@ -125,14 +125,14 @@
 
 .mob-menu__soc-item:not(:last-child)::after {
     content: "";
-    // position: absolute;
-    // top: 0;
-    // left: 10px;
-    margin: 0 10px;
+    position: absolute;
+    top: 0;
+    right: -10px;
+    
+    // margin: 0 10px;
     width: 1px;
     height: 22px;
-    background-color: red;
-    //  rgba(21, 21, 21, 0.2);
+    background-color: rgba(21, 21, 21, 0.2);
    
 }
 
