@@ -1,6 +1,7 @@
 .mob-menu__btn-open {
     display: block;
     margin-left: auto;  
+    padding: 0;
 }
 
 .mob-menu {
@@ -9,7 +10,7 @@
     top: 0;
     width: 100vw;
     height: 100vh;
-    z-index: 2;
+    z-index: 10;
     padding-top: 48px;
     padding-bottom: 48px;
 
@@ -30,9 +31,10 @@
     display: block;
     position: fixed;
     top: 10px;
-    right: 10px;
+    right: 15px;
     // margin-left: auto;
     // margin-bottom: 20px;
+    padding: 0;
     fill: var(--logo-color-tail);
     transition: fill 250s var(--timing-function);
         &:hover,

@@ -46,7 +46,6 @@ img {
 
 button {
   margin: 0;
-  padding: 0;
   font: inherit;
   background-color: inherit;
   border: 0 none currentColor;
@@ -54,6 +53,10 @@ button {
 
 .link {
   text-decoration: none;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 .visually-hidden {
@@ -168,11 +171,17 @@ button {
 
 /* Розмічаємо лого студії */
 .logo {
+  font-size: 24px;
   font-family: "Raleway", "Arial", sans-serif;
-  font-size: 26px;
   font-weight: 700;
-  line-height: 1.19;
+  line-height: 1.17;
   text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    line-height: 1.19;
+    font-size: 26px;
+  }
 }
 
 .logo--main-color {
@@ -189,6 +198,11 @@ button {
 
 .page-header {
   border-bottom: 1px solid var(--header-line-color);
+}
+@media screen and (min-width: 480px) {
+  .page-header {
+    padding: 10px 15px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -286,6 +300,7 @@ button {
 .mob-menu__btn-open {
   display: block;
   margin-left: auto;
+  padding: 0;
 }
 
 .mob-menu {
@@ -294,7 +309,7 @@ button {
   top: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 2;
+  z-index: 10;
   padding-top: 48px;
   padding-bottom: 48px;
   background-color: var(--primary-background-color);
@@ -313,7 +328,8 @@ button {
   display: block;
   position: fixed;
   top: 10px;
-  right: 10px;
+  right: 15px;
+  padding: 0;
   fill: var(--logo-color-tail);
   transition: fill 250s var(--timing-function);
 }
