@@ -3,6 +3,10 @@
       padding-top: 10px; 
       padding-bottom: 10px;
     }
+    @include tablet {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
     border-bottom: 1px solid var(--header-line-color);
   }
   
@@ -26,6 +30,10 @@
   .main-menu {
     /* робимо горизонтальним меню */
     display: flex;
+
+    @include tablet {
+      margin-left: 87px;
+    }
     margin-left: 93px; /* відступ до логотипу  */
   }
   
@@ -84,17 +92,27 @@
   
   /* Розмічуємо мейл та телефон в футері */
   .e-contacts {
-    display: flex;
-    align-items: center; 
+    @include tablet {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      row-gap: 10px;
+      margin-left: auto;
+      // align-items: center; 
+    }
   }
   
-  .e-contacts__arranger {
-    margin-left: auto;
-  }
+  // .e-contacts__arranger {
+  //   margin-left: auto;
+  // }
   
   
-  .e-contacts__item:not(:last-child) {
-    margin-right: 50px;
+  .e-contacts-list:not(:last-child) {
+    
+    @include desktop {
+      margin-right: 50px;
+    }
+    
   }
   
   .e-contacts__link {

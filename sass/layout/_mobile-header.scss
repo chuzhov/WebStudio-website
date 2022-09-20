@@ -2,6 +2,9 @@
     display: block;
     margin-left: auto;  
     padding: 0;
+    @include tablet {
+        display: none;
+    }
 }
 
 .mob-menu {

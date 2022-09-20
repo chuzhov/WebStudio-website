@@ -206,6 +206,12 @@ button {
     padding-bottom: 10px;
   }
 }
+@media screen and (min-width: 768px) {
+  .page-header {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .page-header__combiner {
@@ -226,6 +232,11 @@ button {
   /* робимо горизонтальним меню */
   display: flex;
   margin-left: 93px; /* відступ до логотипу  */
+}
+@media screen and (min-width: 768px) {
+  .main-menu {
+    margin-left: 87px;
+  }
 }
 
 .main-menu__item {
@@ -272,17 +283,20 @@ button {
 }
 
 /* Розмічуємо мейл та телефон в футері */
-.e-contacts {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 768px) {
+  .e-contacts {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    row-gap: 10px;
+    margin-left: auto;
+  }
 }
 
-.e-contacts__arranger {
-  margin-left: auto;
-}
-
-.e-contacts__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 1200px) {
+  .e-contacts-list:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .e-contacts__link {
@@ -303,6 +317,11 @@ button {
   display: block;
   margin-left: auto;
   padding: 0;
+}
+@media screen and (min-width: 768px) {
+  .mob-menu__btn-open {
+    display: none;
+  }
 }
 
 .mob-menu {
