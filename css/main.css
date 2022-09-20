@@ -755,12 +755,18 @@ button {
   cursor: pointer;
 }
 
-.wrapper-footer-btn {
+.footer-btn__wrapper {
+  width: 316px;
   position: relative;
   display: inline-block;
 }
+@media screen and (min-width: 480px) {
+  .footer-btn__wrapper {
+    width: 450px;
+  }
+}
 
-.wrapper-footer-btn .button-icon {
+.footer-btn__wrapper .button-icon {
   position: absolute;
   right: 28px;
   top: 50%;
@@ -788,19 +794,19 @@ button {
 }
 
 /* Блок лого, адрес телефон мейл */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .footer-address-block {
     margin-right: 70px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .footer-social-block {
     margin-right: 93px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .studio-address {
     margin-top: 20px; /*відступ від блоку адреси до лого */
   }
@@ -849,16 +855,29 @@ button {
   column-gap: 10px;
 }
 
+.footer__subscribe-block {
+  display: flex;
+  flex-direction: column;
+  column-gap: 20px;
+  align-items: center;
+}
+
 /* --  Блок підписки  -- */
 .footer-input-wrapper {
-  display: inline-flex;
-  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .footer-input-wrapper {
+    display: inline-flex;
+    justify-content: flex-end;
+  }
 }
 
 .footer-subscribe-us-input {
+  width: 290px;
   width: 358px;
   height: 50px;
-  margin-right: 12px;
   padding: 15px 16px;
   font-size: 16px;
   line-height: 1.25;
@@ -870,6 +889,16 @@ button {
   color: var(--logo-color-contrast);
   background-color: var(--footer-color);
   transition: border-color 250ms var(--time-function);
+}
+@media screen and (min-width: 480px) {
+  .footer-subscribe-us-input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-subscribe-us-input {
+    margin-right: 12px;
+  }
 }
 .footer-subscribe-us-input::placeholder {
   color: rgba(255, 255, 255, 0.6);

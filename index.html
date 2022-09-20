@@ -268,7 +268,18 @@
           </li>
           <li class="our-trends__item">
             <div class="our-trends__img-wrapper">
-              <img class="our-trends__img" src="images/box2-des-1.jpg" alt="Мобільний телефон" width="370">
+
+              <picture>
+                <source
+                  srcset="
+                    images/box2-des-1.jpg 1x,
+                    images/box2-des-2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img src="images/box2-des-2.jpg" alt="Моюільні додатки" width="370">
+              </picture>
+
               <p class="our-trends__description">
                 мобільні додатки
               </p>
@@ -287,7 +298,7 @@
       </div>
     </section>
 
-    <!--  РОЗДІЛ НАША КОМАНДА  
+    <!--  РОЗДІЛ НАША КОМАНДА  -->
     <section class="our-team section section--background-color">
       <div class="container">
 
@@ -565,7 +576,7 @@
           </li>
         </ul>
       </div>
-    </section> -->
+    </section> 
 
     <!-- РОЗДІЛ НАШІ КЛІЄНТИ  -->
     <section class="our-clients section">
@@ -629,7 +640,7 @@
 
   </main>
 
-<!--  PAGE FOOTER  Робимо підвал  
+<!--  PAGE FOOTER  Робимо підвал  -->
   <footer class="page-footer">
 
     <div class="container page-footer__combiner">
@@ -708,7 +719,7 @@
                 placeholder="E-mail"
                 required
               >
-              <div class="wrapper-footer-btn"> 
+              <div class="footer-btn__wrapper"> 
                 <button type="submit" class="footer-submit-btn">
                   Підписатися
                   <span>
@@ -720,13 +731,12 @@
               </div> 
             </div>
           </form>
-            
         </div>
 
     </div>
-  </footer> -->
+  </footer> 
 
-  <!-- Модальне вікно EREM  -->
+  <!-- Модальне вікно   -->
   <div class="backdrop is-hidden" data-modal>
     <div class="modal-order">
       <!-- Закриття модального вікна -->
