@@ -17,6 +17,7 @@
       align-items: center;
       justify-content: center;
     }
+    
   }
   
   /* Розмічаємо головне меню */
@@ -36,7 +37,7 @@
       display: flex;
       margin-left: 87px;
     }
-    margin-left: 93px; /* відступ до логотипу  */
+    margin-left: 92px; /* відступ до логотипу  */
   }
   
   .main-menu__item {
@@ -110,6 +111,7 @@
     }
     @include desktop {
       flex-direction: row;
+      column-gap: 30px;
     }
   }
   

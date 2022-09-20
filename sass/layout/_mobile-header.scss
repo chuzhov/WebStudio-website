@@ -1,5 +1,12 @@
 .mobile-container {
 
+    .logo--resizer {
+        font-size: 24px;
+        @include tablet {
+            display: none;
+        }
+    }
+
     &.container {
         display: flex;
         justify-content: flex-end;
@@ -8,8 +15,7 @@
 
     @include tablet {
         display: none;
-    }
-    
+    }   
 }
 
 .mob-menu__btn-open {

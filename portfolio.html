@@ -1,65 +1,149 @@
 <!doctype html>
 <html lang="uk">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-    <title>Портфоліо</title>
+<!--  PAGE HEADER  -->
+<header class="page-header">
+  <div class="container page-header__combiner">  
+    <nav class="page-header__nav">
+      <!-- Logo -->
+      <a class="logo" href="index.html" target="_self">
+        <span class="logo--main-color">Web</span><span class="logo--accent-color">Studio</span>
+      </a>
 
-    <!-- Comes from Google Fonts: -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-
-  <link rel="stylesheet" href="css/main.min.css" type="text/css">
-</head>
-
-<body>
-  <!--  PAGE HEADER  -->
-  <header class="page-header">
-    <div class="container page-header__combiner">
-      <nav class="page-header__nav">
-        <!-- Logo -->
-        <a class="logo" href="index.html" target="_self">
-          <span class="logo--main-color">Web</span><span class="logo--accent-color">Studio</span>
-        </a>
-
-        <ul class="main-menu list-styler">
-          <li class="main-menu__item">
-            <a class="main-menu__link" href="index.html" target="_self">Студія</a>
-          </li>
-          <li class="main-menu__item main-menu--current-decor">
-            <a class="main-menu__link" href="portfolio.html" target="_self">Портфоліо</a>
-          </li>
-          <li class="main-menu__item">
-            <a class="main-menu__link" href="#">Контакти</a>
-          </li>
-        </ul>
-
-      </nav>
-      <!--E-mail and phone number in header-->
-      <ul class="e-contacts e-contacts__arranger list-styler">
-        <li class="e-contacts__item">
-          <a class="e-contacts__link" href="mailto:info@devstudio.com">
-            <svg class="icon" width="16px" height="12px">
-              <use href="images/icons.svg#icon-envelope"></use>
-            </svg>
-            info@devstudio.com
-          </a>
+    
+      <ul class="main-menu list-styler">
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="index.html" target="_self">Студія</a>
         </li>
-        <li class="e-contacts__item">
-          <a class="e-contacts__link" href="tel:+380961111111">
-            <svg class="icon" width="10px" height="16px">
-              <use href="images/icons.svg#icon-mobile"></use>
-            </svg>
-            +38 096 111 11 11
-          </a>
+        <li class="main-menu__item">
+          <a class="main-menu__link main-menu--current-decor" href="portfolio.html" target="_self">Портфоліо</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">Контакти</a>
         </li>
       </ul>
+
+    </nav>
+    
+    <ul class="e-contacts e-contacts__arranger list-styler">
+      <li class="e-contacts__item">
+        <a class="e-contacts__link link" href="mailto:info@devstudio.com">
+          <svg class="icon" width="16px" height="12px">
+            <use href="images/icons.svg#icon-envelope"></use>
+          </svg>
+          info@devstudio.com
+        </a>
+      </li>
+      <li class="e-contacts__item">
+        <a class="e-contacts__link link" href="tel:+380961111111">
+          <svg class="icon" width="10px" height="16px">
+            <use href="images/icons.svg#icon-mobile"></use>
+          </svg>
+          +38 096 111 11 11
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="mobile-container container">
+    <!-- МОБІЛЬНА ЧАСТИНА -->
+    <!-- Logo -->
+    <a class="logo logo--resizer" href="index.html" target="_self">
+      <span class="logo--main-color">Web</span><span class="logo--accent-color">Studio</span>
+    </a>
+    <button type="button" class="mob-menu__btn-open data-modal-open">
+      <svg height="40px" width="40px">
+        <use href="images/icons.svg#burger-ico"></use>
+      </svg>
+    </button>
+    <div class="mob-menu is-hidden"> 
+      <div class="container">
+        <div class="mob-menu-top">
+
+          <button type="button" class="mob-menu__btn-close">
+            <svg height="40px" width="40px">
+              <use href="images/icons.svg#mob-close-ico"></use>
+            </svg>
+          </button>
+
+          <nav>
+            <ul class="mob-menu__list list-styler link-styler">
+              <li class="mob-menu__item">
+                <a href="" class="mob-menu__link link">Студия</a>
+              </li>
+              <li class="mob-menu__item">
+                <a href="portfolio.html" class="mob-menu__link link" target="_self">Портфолио</a>
+              </li>
+              <li class="mob-menu__item">
+                <a href="" class="mob-menu__link link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          
+        </div>
+
+        <div class="mob-menu-bottom">
+
+          <div class="mob-menu-connect">
+            <ul class="mob-menu__contact list-styler">
+              <li class="mob-menu__contact-list-item">
+                <a href="tel:+380961111111" class="mob-menu__contact-link link">
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="mob-menu__contact-list-item">
+                <a href="email:info@devstudio.com" class="mob-menu__contact-link link">
+                  info@devstudio.com
+                </a></li>
+            </ul>       
+          </div> 
+
+          <ul class="mob-menu__soc-list list-styler">
+            <li class="mob-menu__soc-item">
+              <a
+                class="mob-menu__soc-link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >Instagram</a
+              >
+            </li>
+            <li class="mob-menu__soc-item">
+              <a
+                class="mob-menu__soc-link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >Twitter</a
+              >
+            </li>
+            <li class="mob-menu__soc-item">
+              <a
+                class="mob-menu__soc-link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >Facebook</a
+              >
+            </li>
+            <li class="mob-menu__soc-item">
+              <a
+                class="mob-menu__soc-link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+
+        </div>
+      </div>
     </div>
-  </header>
+
+    <!-- Кінець моб. частини -->
+  </div>
+</header>
 
   
     <!--  ===  MAIN PORTFOLIO SECTION  === -->
@@ -361,6 +445,9 @@
     </div>
   </footer>
   
+  <script src="js/menu.js"></script>
+  <script src="js/modal.js"></script>
+
 </body>
 
 </html>

@@ -173,17 +173,12 @@ button {
 
 /* Розмічаємо лого студії */
 .logo {
-  font-size: 24px;
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 700;
   line-height: 1.17;
   text-decoration: none;
-}
-@media screen and (min-width: 768px) {
-  .logo {
-    line-height: 1.19;
-    font-size: 26px;
-  }
+  line-height: 1.19;
+  font-size: 26px;
 }
 
 .logo--main-color {
@@ -232,7 +227,7 @@ button {
 
 .main-menu {
   /* робимо горизонтальним меню */
-  margin-left: 93px; /* відступ до логотипу  */
+  margin-left: 92px; /* відступ до логотипу  */
 }
 @media screen and (min-width: 768px) {
   .main-menu {
@@ -303,6 +298,7 @@ button {
 @media screen and (min-width: 1200px) {
   .e-contacts {
     flex-direction: row;
+    column-gap: 30px;
   }
 }
 
@@ -326,6 +322,14 @@ button {
   color: var(--accent-color);
 }
 
+.mobile-container .logo--resizer {
+  font-size: 24px;
+}
+@media screen and (min-width: 768px) {
+  .mobile-container .logo--resizer {
+    display: none;
+  }
+}
 .mobile-container.container {
   display: flex;
   justify-content: flex-end;

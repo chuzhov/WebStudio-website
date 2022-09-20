@@ -1,14 +1,12 @@
 /* Розмічаємо лого студії */
 .logo {
-    font-size: 24px;
+    
     font-family: 'Raleway', 'Arial', sans-serif;
     font-weight: 700;
     line-height: 1.17;
     text-decoration: none;
-    @include tablet {
-      line-height: 1.19;
-      font-size: 26px;
-    }
+    line-height: 1.19;
+    font-size: 26px;
   }
   .logo--main-color {   
     color: var(--logo-color-head);
