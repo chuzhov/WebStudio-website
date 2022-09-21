@@ -14,6 +14,15 @@
   .logo--accent-color {
     color: var(--logo-color-tail);  //можно назвати page-header--color
   }
-  .logo--reverse-color {
-    color: var(--logo-color-contrast); //можно назвати page-footer--color
+
+  .logo__footer {
+    @media screen and(max-width: 767px) {
+      display: block;
+      margin-bottom: 20px;
+
+      font-size: 24px;
+      line-height: calc(28.18 / 24);
+
+      color: var(--logo-color-contrast);
+    }
   }
