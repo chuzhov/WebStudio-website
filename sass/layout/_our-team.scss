@@ -18,15 +18,18 @@
       height: auto;
 
     @include mobile {
+      min-width: 450px;
       height: 622px;
       width: 450px;
     }
     @media screen and (min-width: 768px) {
+      min-width: 354px;
       width: 354px;  
       height: 536px;
     }
 
     @media screen and(min-width: 1200px) {
+      min-width: 270px;
       height: 428px;
     }
 

@@ -45,29 +45,47 @@
 /* Фільтр робіт */
 .portfolio-filter {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  column-gap: 8px;
+  row-gap: 15px;
+
+  @include tablet {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
   
 }
 
 .portfolio-filter__arranger {
-  margin-bottom: 50px;
+    margin-bottom: 30px;
+    @include desktop {
+    margin-bottom: 50px;
+  }
 }
-
-.portfolio-filter__item:not(:last-child) {
-  margin-right: 8px;
-}
+// .portfolio-filter__item:not(:last-child) {
+//   margin-right: 8px;
+// }
 
 /* Перелік робіт  3х3  */
 .our-portfolio {
   display: flex;
-  justify-content: center;
+  // justify-content: center;
   flex-wrap: wrap;
   row-gap: 30px;
   column-gap: 30px;
 }
 
 .our-portfolio__item {
-  height: 404px;
+
+  @include tablet {
+    width: 354px;
+    height: 440px;
+  }
+  @include desktop {
+    height: 370px;
+    width: auto;
+  }
   background-color: var(--logo-color-contrast);
   outline: none;
 }
@@ -101,7 +119,7 @@
 .our-portfolio__link .thumb {
   position: relative;
   width: 100%;
-  height: 294px;
+  height: 100%;
   overflow: hidden;
 }
 .thumb > .our-portfolio__overlay {
@@ -109,13 +127,22 @@
   align-items: center;
 }
 
+.thumb > img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+
+}
+
 .our-portfolio__overlay {
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 0;
+  bottom: -1px;
   left: 0;
-  opacity: 0.9;
+  // opacity: 0.9;
   padding: calc((370px - 322px) / 2);  
   overflow: auto;
 
@@ -133,6 +160,8 @@
 
 .our-portfolio__info {
   padding: 20px 24px;
+  flex-direction: column;
+  flex-grow: 1;
 
   border-right: 1px solid var(--border-color-portfolio);
   border-bottom: 1px solid var(--border-color-portfolio);
