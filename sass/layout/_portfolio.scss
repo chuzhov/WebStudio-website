@@ -91,7 +91,10 @@
 }
 
 .our-portfolio__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
 
   color: var(--title-text-color);
   text-decoration: none;
@@ -119,13 +122,12 @@
 .our-portfolio__link .thumb {
   position: relative;
   width: 100%;
-  height: 100%;
   overflow: hidden;
 }
-.thumb > .our-portfolio__overlay {
-  display: flex;
-  align-items: center;
-}
+// .thumb > .our-portfolio__overlay {
+//   display: flex;
+//   align-items: center;
+// }
 
 .thumb > img {
   display: block;
