@@ -805,27 +805,34 @@
                         placeholder="Введіть текст"></textarea>
         </div>
         
-          <label for="call-back-form-legal" class="legal-label">Погоджуюся з розсилкою та приймаю
-          <input  type="checkbox"
-                  name="call-back-form-legal"
-                  id="call-back-form-legal"
-                  value="not"
-                  class="modal-check-box visually-hidden">
+          <div class="legal__wrapper">
+            <input  type="checkbox"
+                    name="call-back-form-legal"
+                    id="call-back-form-legal"
+                    value="not"
+                    class="modal-check-box visually-hidden">
           
-          <svg class="check-box-ico" width="16" height="15">
-            <use class="legal-unchecked" href="images/icons.svg#check-box"></use>
-            <use class="legal-checked" href="images/icons.svg#checkmark"></use>
-          </svg>
-        
-          <a class="legal-link" href="https://www.penguinrandomhouse.com/articles/so-you-want-to-make-a-deal-with-the-devil/" rel="nofollow noopener noreferrer"  target="_blank">Умови договору</a>
-          </label>        
-        
+            <svg class="check-box-ico" width="16" height="15">
+              <use class="legal-unchecked" href="images/icons.svg#check-box"></use>
+              <use class="legal-checked" href="images/icons.svg#checkmark"></use>
+            </svg>
+            <label for="call-back-form-legal" class="legal-label">Погоджуюся з розсилкою та приймаю
+              <a class="legal-link" href="https://www.penguinrandomhouse.com/articles/so-you-want-to-make-a-deal-with-the-devil/" rel="nofollow noopener noreferrer"  target="_blank">Умови договору</a>
+            </label>        
+          </div>
         <button type="submit" class="modal-submit-btn">Відправити</button>
         
       </form>
     </div>
 
   </div> 
+
+  <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
 
   <script src="js/menu.js"></script>
   <script src="js/modal.js"></script>  
