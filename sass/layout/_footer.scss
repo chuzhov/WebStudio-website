@@ -138,6 +138,10 @@
   @include mobile {
     margin-bottom: 60px;
   }
+
+  @include desktop {
+    margin-bottom: 0;
+  }
 }
 
 .footer-addr-block li:not(:last-child) {
@@ -184,6 +188,7 @@
  
   @include desktop {
     margin-right: 93px;
+    margin-bottom: 0px;
   }
 }
 

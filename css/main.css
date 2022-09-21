@@ -418,6 +418,10 @@ button {
   color: var(--accent-color);
 }
 
+.mob-menu__current {
+  color: var(--accent-color);
+}
+
 .mob-menu__contact {
   margin-bottom: 64px;
 }
@@ -897,6 +901,11 @@ button {
     margin-bottom: 60px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer-addr-block {
+    margin-bottom: 0;
+  }
+}
 
 .footer-addr-block li:not(:last-child) {
   margin-bottom: 9px;
@@ -941,6 +950,7 @@ button {
 @media screen and (min-width: 1200px) {
   .footer-social-block {
     margin-right: 93px;
+    margin-bottom: 0px;
   }
 }
 
