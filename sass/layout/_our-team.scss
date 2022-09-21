@@ -13,10 +13,15 @@
   
   /* sec4 Картка працівника */
   .our-team__team-mate {
-    height: 622px;
-    width: 450px;
-    
-    @media screen and(min-width: 768px) {
+
+      min-width: 100%;
+      height: auto;
+
+    @include mobile {
+      height: 622px;
+      width: 450px;
+    }
+    @media screen and (min-width: 768px) {
       width: 354px;  
       height: 536px;
     }
@@ -68,9 +73,4 @@
     justify-content: center;
     opacity: transparent;
   }
-  
-  
-     
-  
-  
-  
+ 

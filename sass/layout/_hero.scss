@@ -23,7 +23,7 @@
       background-image: var(--hero-gradient), url("../images/hero-img-tab-1.jpg");
 
       @include retina {
-        background-image: var(--hero-gradient), url(../images/hero-tab-2.jpg);
+        background-image: var(--hero-gradient), url(../images/hero-img-tab-2.jpg);
       }
 
       max-width: 1199px;
