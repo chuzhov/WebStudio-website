@@ -189,13 +189,15 @@ button {
   color: var(--logo-color-tail);
 }
 
+.logo__footer {
+  color: var(--logo-color-contrast);
+}
 @media screen and (max-width: 767px) {
   .logo__footer {
     display: block;
     margin-bottom: 20px;
     font-size: 24px;
     line-height: 1.1741666667;
-    color: var(--logo-color-contrast);
   }
 }
 
@@ -802,27 +804,39 @@ button {
   align-items: center;
   flex-direction: column;
 }
+@media screen and (min-width: 768px) {
+  .page-footer__combiner {
+    display: block;
+  }
+}
 @media screen and (min-width: 1200px) {
   .page-footer__combiner {
+    display: flex;
     flex-direction: row;
     align-items: baseline;
   }
 }
 
-.page-footer.logo {
-  display: block;
+.logo-address {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-/* Блок лого, адрес телефон мейл */
-@media screen and (min-width: 768px) {
-  .footer-address-block {
+@media screen and (min-width: 1200px) {
+  .logo-address {
+    display: inline-flex;
+    align-items: flex-start;
     margin-right: 70px;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .footer-social-block {
-    margin-right: 93px;
+/* Блок лого, адрес телефон мейл */
+.footer-address-block {
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-address-block {
+    text-align: left;
   }
 }
 
@@ -884,10 +898,16 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-background-color);
+  margin-bottom: 20px;
 }
 
 .footer-social-block {
   margin-bottom: 20px;
+}
+@media screen and (min-width: 480px) {
+  .footer-social-block {
+    margin-bottom: 60px;
+  }
 }
 @media screen and (max-width: 767px) {
   .footer-social-block {
@@ -897,9 +917,17 @@ button {
     align-items: center;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .footer-social-block {
-    margin-bottom: 60px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-social-block {
+    margin-right: 93px;
   }
 }
 
@@ -908,12 +936,24 @@ button {
   column-gap: 10px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1198px) {
+  .logo-soc {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+
 .footer__subscribe-block {
-  display: block;
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
   align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__subscribe-block {
+    display: inline-flex;
+    align-items: flex-start;
+  }
 }
 
 /* --  Блок підписки  -- */
@@ -929,9 +969,9 @@ button {
     justify-content: flex-end;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1200px) {
   .footer-input-wrapper {
-    width: 450px;
+    flex-direction: row;
   }
 }
 
@@ -958,6 +998,11 @@ button {
 @media screen and (min-width: 768px) {
   .footer-subscribe-us-input {
     margin-right: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-subscribe-us-input {
+    width: 358px;
   }
 }
 .footer-subscribe-us-input::placeholder {

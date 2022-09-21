@@ -32,11 +32,8 @@
   
     &.footer-btn__wrapper .button-icon {
     position: absolute;
-    // right: 28px;
-    // top: 50%;
     top: 10px;
     right: 28px;
-    // transform: translateY(-50%);
   
     fill: var(--logo-color-contrast)
   }
@@ -57,27 +54,35 @@
   align-items: center;
   flex-direction: column;
 
+  @include tablet {
+    display: block;
+  }
+
   @media screen and(min-width: 1200px) {
+    display: flex;
     flex-direction: row;
     align-items: baseline;
-  }
-  
+  }  
 }
 
-.page-footer.logo {
-  display: block;
+.logo-address {
+  
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    @include desktop {
+      display: inline-flex;
+      align-items: flex-start;
+      margin-right: 70px;
+    }
+  
 }
 
 /* Блок лого, адрес телефон мейл */
 .footer-address-block {
-  @include tablet {
-    margin-right: 70px;
-  }
-}
-
-.footer-social-block {
-  @include tablet {
-    margin-right: 93px;
+  text-align: center;
+  @include desktop {
+    text-align: left;
   }
 }
 
@@ -151,19 +156,34 @@
   text-transform: uppercase;
   color: var(--primary-background-color);
 
+  margin-bottom: 20px;
+
 }
 
 .footer-social-block {
-  @media screen and (max-width: 767px){
+  
+  margin-bottom: 20px;
+
+  @include mobile {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (max-width: 767px){ 
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
   }
-  margin-bottom: 20px;
-
-  @include mobile {
-    margin-bottom: 60px;
+  
+  @include tablet {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  @include desktop {
+    margin-right: 93px;
   }
 }
 
@@ -172,12 +192,24 @@
   column-gap: 10px;
 }
 
+.logo-soc {
+  @media screen and (min-width: 768px) and (max-width: 1198px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+
 .footer__subscribe-block {
-  display: block;
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
   align-items: center;
+
+  @include desktop {
+    display: inline-flex;
+    align-items: flex-start;
+  }
+  
 
 }
 
@@ -194,8 +226,8 @@
     justify-content: flex-end;
   }
 
-  @include mobile {
-    width: 450px;
+  @include desktop {
+    flex-direction: row;
   }
 
 }
@@ -211,6 +243,10 @@
   @include tablet {
     margin-right: 12px;
   }
+  @include desktop {
+    width: 358px;
+  }
+
   padding: 15px 16px;
 
   font-size: 16px;
